@@ -43,12 +43,13 @@
 	alert("Got FileWriter");
 
 	var text = document.getElementById("reps").value;
+	var text2 = document.getElementById("weight").value;
 	writer.onwriteend = function(evt) {
 		
 	    document.getElementById("output").innerHTML = "File Write Complete!";
 	};
 
-        writer.write(text);
+        writer.write("number of reps	",text, "	amount of weight	", text2);
 
     }
 
@@ -75,13 +76,15 @@
     function gotFileWriterAppend(writer) {
 
 	var text = document.getElementById("reps").value;
+	var text2 = document.getElementById("weight").value;
+	
 	writer.onwriteend = function(evt) {
 		
 	    document.getElementById("output").innerHTML = "File append Complete!";
 	};
 
 	writer.seek(writer.length);
-        writer.write(text);
+        writer.write(text, text2);
 
     }
 
