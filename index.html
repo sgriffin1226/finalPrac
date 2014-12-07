@@ -49,7 +49,7 @@
 	    document.getElementById("output").innerHTML = "File Write Complete!";
 	};
 
-        writer.write("number of reps	",text, "	amount of weight	", text2);
+        writer.write("number of reps	" + text + "	amount of weight	" + text2);
 
     }
 
@@ -84,7 +84,7 @@
 	};
 
 	writer.seek(writer.length);
-        writer.write(text, text2);
+        writer.write(text + text2);
 
     }
 
