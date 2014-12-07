@@ -2,11 +2,10 @@
 <html>
 <head>
 <title>whatup</title>
-<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
-<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script> -->
 
 <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1"/>
+<link rel="stylesheet" href="jquery-ui.min.css">
+	<script src="jquery-ui.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
     <script type="text/javascript" charset="utf-8">
     // Wait for device API libraries to load
@@ -119,7 +118,9 @@
         };
         reader.readAsText(file);
     }
+	
 	</script>
+  
 </head>
 <body>
 
@@ -131,6 +132,8 @@
 	-->
 	
 <p id="output">stuff</p>
+
+
 <div data-role="field contain">
 	<label for="selectWorkout">select workout</label>
 	<select name="selectWorkout" id="selectWorkout">
@@ -147,9 +150,6 @@
 	<label for="lbs">weight(in lbs)</label>
 	<input type="text" name="lbs" id="lbs" value="" />
 </div>
-
-
-
 
 <!--<input type="submit" value="Submit Form" id="submit" data-theme="a" />-->
 </form>
