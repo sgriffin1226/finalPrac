@@ -43,7 +43,7 @@
 	alert("Got FileWriter");
 
 	var text = document.getElementById("reps").value;
-	var text2 = document.getElementById("weight").value;
+	var text2 = document.getElementById("lbs").value;
 	writer.onwriteend = function(evt) {
 		
 	    document.getElementById("output").innerHTML = "File Write Complete!";
@@ -76,7 +76,7 @@
     function gotFileWriterAppend(writer) {
 
 	var text = document.getElementById("reps").value;
-	var text2 = document.getElementById("weight").value;
+	var text2 = document.getElementById("lbs").value;
 	
 	writer.onwriteend = function(evt) {
 		
